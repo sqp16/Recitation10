@@ -11,11 +11,11 @@ import edu.cmu.cs.cs214.rec10.framework.core.GamePlugin;
 public class MemoryPlugin implements GamePlugin {
     private static String GAME_NAME = "Memory";
 
-    // Invariant: GRID_WIDTH * GRID_HEIGHT % 2 == 0.
+    // Invariant: MONEYDOOR_GRID_WIDTH * MONEYDOOR_GRID_HEIGHT % 2 == 0.
     private static int GRID_WIDTH = 4;
     private static int GRID_HEIGHT = 4;
 
-    // Invariant: 2 * WORDS.length == GRID_HEIGHT * GRID_WIDTH.
+    // Invariant: 2 * WORDS.length == MONEYDOOR_GRID_HEIGHT * MONEYDOOR_GRID_WIDTH.
     private static String[] WORDS =
             { "Apple", "Boat", "Car", "Dog", "Eagle", "Fish", "Giraffe", "Helicopter" };
 
