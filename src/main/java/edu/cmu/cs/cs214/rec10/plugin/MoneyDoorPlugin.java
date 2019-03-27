@@ -2,15 +2,14 @@ package edu.cmu.cs.cs214.rec10.plugin;
 
 import edu.cmu.cs.cs214.rec10.framework.core.GameFramework;
 import edu.cmu.cs.cs214.rec10.framework.core.GamePlugin;
-import edu.cmu.cs.cs214.rec10.framework.core.Player;
 
 import java.util.*;
 
 public class MoneyDoorPlugin implements GamePlugin {
 
     private int[] arr = {-3, -2, -1, 0, 1, 2, 3, 4, 5, 6};
-    private int ONE = 1;
-    private int TEN = 10;
+    public static final int MONEYDOOR_GRID_HEIGHT = 1;
+    public static final int MONEYDOOR_GRID_WIDTH = 10;
 
     // The game framework
     private GameFramework framework = null;
@@ -23,11 +22,11 @@ public class MoneyDoorPlugin implements GamePlugin {
     }
 
     public int getGridWidth() {
-        return TEN;
+        return MONEYDOOR_GRID_WIDTH;
     }
 
     public int getGridHeight() {
-        return ONE;
+        return MONEYDOOR_GRID_HEIGHT;
     }
 
     public void onRegister(GameFramework fwk) {
